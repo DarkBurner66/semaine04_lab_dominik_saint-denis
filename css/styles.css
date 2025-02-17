@@ -27,6 +27,12 @@ h2 {
   letter-spacing: 0.055em;
   color: black;
   line-height: 60px;
+  padding: 55px 0 55px 0;
+  margin: 0 0 40px 0;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 /*------------------------------------
 COMPONENTS
@@ -47,24 +53,41 @@ header h1 {
 
 
 /* section regles */
+.regles .wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:30px ;
+}
 .regles .gauche{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 50px;
+}
+.regles article:hover{
+  background-color: #BDC3C7;
+}
+.regles p{
+  width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    border: 5px solid  #D35400;
+    font: bold 1.875rem "Quicksand";
+    color: #D35400;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .gauche p{
    display: flex;
    justify-content: center;
     align-items: center;
     margin-left: 50px;
-    width: 210px;
-    height: 210px;
-    border-radius: 100%;
-    border: 1px solid  #D35400;
+ 
 }
 .regles .droite{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 50px;
 }
 .droite p{
@@ -72,8 +95,51 @@ header h1 {
     justify-content: center;
      align-items: center;
     margin-right: 50px;
-    width: 210px;
-    height: 210px;
-    border-radius: 100%;
-    border: 1px solid  #D35400;
+}
+.regles h3{
+  font:400 2.25rem "Quicksand";
+}
+/* section info */
+.info .wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  width: 1000px;
+}
+.info article{
+width: 470px;
+}
+.info p{
+  font:400 1.25rem "Roboto";
+  line-height: 40px;
+  margin: 30px 0px 30px 0px;
+}
+.info span{
+  font-weight: bold;
+}
+
+/* footer */
+footer{
+  background-color:  #2980B9;
+}
+footer .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+}
+footer p{
+  font:bold 1.25rem "Roboto";
+}
+footer .bouton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100%;
+  border: 3px solid #BDC3C7;
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
 }
